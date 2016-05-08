@@ -226,26 +226,26 @@ function mvSuper(pX,pY){
             superBlock++;
         }
     }
-    //var robot=0;
-    //var suptool=0;
-    //for(var i=1;i<=10;i++){
-    //    for(var j=1;j<=10;j++){
-    //        if(block[i][j]==3){
-    //            robot++;
-    //        }
-    //        if(block[i][j]==1){
-    //            suptool++;
-    //        }
-    //    }
-    //}
-    //if(robot==0){
-    //    alert("win");
-    //}else if(robot!=0 || (robot!=0&&suptool==0)){
-    //    if(superBlock==-1) alert("failed");
-    //    else{
-    //        return;
-    //    }
-    //}
+    var robot=0;
+    var suptool=0;
+    for(var i=1;i<=10;i++){
+        for(var j=1;j<=10;j++){
+            if(block[i][j]==3){
+                robot++;
+            }
+            if(block[i][j]==1){
+                suptool++;
+            }
+        }
+    }
+    if(robot==0){
+        alert("win");
+    }else if(robot!=0 || (robot!=0&&suptool==0)){
+        if(superBlock==-1) alert("failed");
+        else{
+            return;
+        }
+    }
 }
 //²úÉúhero robot super as....
 function clickXY(){
